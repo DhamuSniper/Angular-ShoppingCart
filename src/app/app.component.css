@@ -1,0 +1,17 @@
+.container{
+    background-image:url('bg.png');
+    background-position: 25%;
+}
+.nav-link{
+    color:mediumvioletred;   
+    border: 2px solid mediumvioletred;
+    border-spacing: 4px 1px;
+    border-radius:20px;
+}
+.navbar-nav .nav-link {
+    padding-right: 13px;
+    padding-left:13px;
+}
+button{
+    background-color: mediumvioletred;
+}
