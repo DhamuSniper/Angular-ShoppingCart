@@ -1,3 +1,21 @@
-<p>
-  login works!
-</p>
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <div class="">
+      <button class="btn btn-danger" (click)="toggleEditor('login')">login</button>
+      <button class="btn btn-success"(click)="toggleEditor('signup')">SignUp</button>
+    </div>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+      <app-log *ngIf="showLogin"></app-log>
+      <app-signup *ngIf='showSignup'></app-signup>
+  </div>
+
+</ng-template>
+
+<button class="btn btn-md btn-outline-primary" style="background-color:mediumvioletred" (click)="open(content)">Login</button>
+
+
+
